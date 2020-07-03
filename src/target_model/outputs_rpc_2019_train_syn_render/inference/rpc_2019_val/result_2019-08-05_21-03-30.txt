@@ -1,0 +1,6 @@
+|    level |  method |   cAcc |  mCIoU |  ACD | mCCD |
+|     ---: |    ---: |   ---: |   ---: | ---: | ---: |
+|     easy | default | 85.05% | 96.53% | 0.25 | 0.04 |
+|   medium | default |  69.8% | 95.75% | 0.51 | 0.05 |
+|     hard | default | 58.45% | 94.93% | 0.86 | 0.05 |
+| averaged | default | 71.02% | 95.68% | 0.53 | 0.04 |
