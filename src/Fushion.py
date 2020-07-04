@@ -39,7 +39,7 @@ class FeatureExtractor(nn.Module):
 	
 class Fushion(object):
 
-	def __init__(self, batch_size=50, image_size=512, patch_size=32,
+	def __init__(self, batch_size=50, image_size=512, patch_size=32, epsilon=1,
 				 channel=3, gamma=0.95, learning_rate=0.005, epoch=50,
 				 pic_path="path/to/rpc/train2019/", output_dir="./result/"):
 
@@ -48,6 +48,7 @@ class Fushion(object):
 		self.image_size = image_size
 		self.patch_size = patch_size
 
+		self.epsilon = epsilon
 		self.gamma = gamma
 		self.learning_rate = learning_rate
 		self.epoch = epoch
@@ -180,7 +181,7 @@ class Fushion(object):
 					img_gram = self.gram_matrix(image_feature[i])
 					loss3 += F.mse_loss(basic_gram, img_gram)
 				loss3 = torch.log(loss3)
-				loss = loss1 + loss3
+				loss = self.epsilon * loss1 + loss3
 				
 				print('loss1:%.4f,loss2:%.4f\nloss:%.4f' % (loss1, loss3, loss))
 				optimizer.zero_grad()
