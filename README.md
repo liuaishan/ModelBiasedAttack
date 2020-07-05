@@ -2,7 +2,7 @@
 
 Code for the paper 
 
-[Patch Attack for Automatic Check-out](https://arxiv.org/pdf/2005.09257.pdf)
+[Bias-based Universal Adversarial Patch Attack for Automatic Check-out](https://arxiv.org/pdf/2005.09257.pdf)
 <br>[Aishan Liu](https://liuaishan.github.io/), Jiakai Wang, [Xianglong Liu](http://sites.nlsde.buaa.edu.cn/~xlliu/), Bowen Cao, Chongzhi Zhang, Hang Yu
 <br>European Conference on Computer Vision (ECCV), 2020
 
