@@ -11,7 +11,12 @@ Code for the paper
 This paper proposes a bias-based framework to generate class-agnostic universal adversarial patches with strong generalization ability, which exploits both the perceptual and semantic bias of models. Regarding the perceptual bias, since DNNs are strongly biased towards textures, we exploit the hard examples which convey strong model uncertainties and extract a textural patch prior from them by adopting the style similarities. The patch prioris more close to decision boundaries and would promote attacks. To further alleviate the heavy dependency on large amounts of data in training universal attacks, we further exploit the semantic bias. As the class-wise preference, prototypes are introduced and pursued by maximizing the multi-class margin to help universal training. Taking Automatic Check-out (ACO) as the typical scenario, extensive experiments including white-box/black-box settings in both digital-world (RPC, the largest ACO related dataset) and physical-world scenario (Taobao and JD, the world’s largest online shopping platforms) are conducted. Experimental results demonstrate that our proposed framework outperforms state-of-the-art adversarial patch attack methods.
 
 For questions regarding implementation contact [Jiakai Wang](jk_buaa_scse@buaa.edu.cn)
+# Examples
 
+Examples on Taobao and JD platform
+
+<video src="./attack-taobao.mp4" width="800px" height="600px" controls="controls"></video>
+<video src="./attack-JD.mp4" width="800px" height="600px" controls="controls"></video>
 # To Perform Attacks
 
 ## Fuse a Texture Patch Prior
