@@ -1,4 +1,4 @@
-# Bias-based Universal Adversarial Patch Attack for Automatic Check-out
+# ACOAttack
 
 Code for the paper 
 
@@ -15,8 +15,9 @@ For questions regarding implementation contact [Jiakai Wang](jk_buaa_scse@buaa.e
 
 Examples on Taobao and JD platform
 
-<video src="./attack-taobao.mp4" width="800px" height="600px" controls="controls"></video>
-<video src="./attack-JD.mp4" width="800px" height="600px" controls="controls"></video>
+[![patch](https://github.com/liuaishan/ModelBiasedAttack/blob/master/patch.png)](https://github.com/liuaishan/ModelBiasedAttack/blob/master/compare.mp4)
+
+
 # To Perform Attacks
 
 ## Fuse a Texture Patch Prior
@@ -31,7 +32,7 @@ Hard examples refer to samples that was misclassified by your model.
 
 ## Generate Prototypes
 
-To generate prototypes of a spicified class, you can run:
+To generate prototypes of class x, you can run:
 
 ```python
 python gen_prototypes.py --class_id 
@@ -47,7 +48,7 @@ With RPC dataset, you can simply run:
 python FPA.py
 ```
 
-If you want to train an adversarial patch on a mixed dataset of original images and prototypes, you can add a certain amount of prototypes to your dataset by adding the corresponding ground truth to the .txt document with labels. 
+If you want to train an adversarial patch on a mixed dataset of original images and prototypes, you can add a certain amount of prototypes to your dataset by adding the corresponding ground truth to the txt document with labels. 
 
 ## Digital Attacks
 
@@ -57,7 +58,7 @@ Once the training process finishes, you will get an adversarial patch. To perfor
 python attack.py
 ```
 
-Now you can see the classification result of the original/adversarial image.
+Now you can use see the classification result of the original/adversarial image.
 
 ## Real World Attacks
 
