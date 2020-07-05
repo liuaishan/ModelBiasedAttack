@@ -15,7 +15,7 @@ For questions regarding implementation contact [Jiakai Wang](jk_buaa_scse@buaa.e
 
 Examples on Taobao and JD platform
 
-[![patch](https://github.com/liuaishan/ModelBiasedAttack/blob/master/patch.png)](https://github.com/liuaishan/ModelBiasedAttack/blob/master/compare.mp4)
+[![patch](https://github.com/liuaishan/ModelBiasedAttack/blob/master/examples.png)](https://github.com/liuaishan/ModelBiasedAttack/blob/master/compare.mp4)
 
 
 # To Perform Attacks
