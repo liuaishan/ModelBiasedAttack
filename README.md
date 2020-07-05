@@ -72,9 +72,9 @@ Follow the instructions in [INSTALL](./src/target_model/install.md).
 If you find this work is useful in your research, please consider citing:
 
 ```
-@inproceedings{Liu2020,
-    title={},
-    author={},
+@inproceedings{Liu2020Biasbased,
+    title={Bias-based Universal Adversarial Patch Attack for Automatic Check-out},
+    author={Liu, Aishan and Wang, Jiakai and Liu, Xianglong and Cao, bowen and Zhang, Chongzhi and Yu, Hang},
     Booktitle = {European Conference on Computer Vision},
     year={2020}
 }
