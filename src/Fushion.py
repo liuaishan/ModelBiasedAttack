@@ -40,13 +40,15 @@ class FeatureExtractor(nn.Module):
 class Fushion(object):
 
 	def __init__(self, batch_size=50, image_size=512, patch_size=32, epsilon=1,
-				 channel=3, gamma=0.95, learning_rate=0.005, epoch=50,
-				 pic_path="path/to/rpc/train2019/", output_dir="./result/"):
+				 channel=3, gamma=0.95, learning_rate=0.005, epoch=50, 
+				 basic_path='../xuanmai.jpg', pic_path="path/to/rpc/train2019/",
+				 output_dir="./result/"):
 
 		# hyperparameter
 		self.batch_size = batch_size
 		self.image_size = image_size
 		self.patch_size = patch_size
+		self.basic_path = basic_path
 
 		self.epsilon = epsilon
 		self.gamma = gamma
@@ -112,7 +114,7 @@ class Fushion(object):
 	def train_op(self):
 		self.build_dir()
 
-		basic = Image.open('../xuanmai.jpg', 'r')
+		basic = Image.open(self.basic_path, 'r')
 		self.x, self.y = basic.size
 		x3,x4,x5,x6 = 1192.58, 782.87, 206.76, 214.61
 		x3 = int(x3)
